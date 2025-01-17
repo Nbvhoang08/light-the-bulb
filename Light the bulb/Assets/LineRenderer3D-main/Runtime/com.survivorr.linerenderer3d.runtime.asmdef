@@ -1,0 +1,7 @@
+{
+    "name": "com.survivorr.linerenderer3d.runtime",
+    "references": [
+    "Unity.Collections",
+    "Unity.Burst"
+    ]
+}
