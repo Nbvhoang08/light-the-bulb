@@ -144,7 +144,7 @@ public class ChooseLV : UICanvas
         yield return new WaitForSeconds(delay);
         float duration = 0.3f;
         float elapsed = 0f;
-        SoundManager.Instance.PlayVFXSound(3);
+        //SoundManager.Instance.PlayVFXSound(2);
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;

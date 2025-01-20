@@ -70,7 +70,7 @@ public class GamePlay : UICanvas
         if (LevelName != null)
         {   
             int levelNumber = SceneManager.GetActiveScene().buildIndex;
-            LevelName.text = $"Level: {levelNumber-1:D2}"; // Hiển thị với 2 chữ số, ví dụ: 01, 02
+            LevelName.text = $"Level: {levelNumber:D2}"; // Hiển thị với 2 chữ số, ví dụ: 01, 02
         }   
     }
     public void SoundBtn()

@@ -14,6 +14,7 @@ public class Move : MonoBehaviour
         // Lấy Rigidbody của hình cầu
         sphereRigidbody = GetComponent<Rigidbody>();
         sphereRigidbody.constraints = RigidbodyConstraints.FreezePositionZ; // Chỉ di chuyển trong mặt phẳng XY
+        sphereRigidbody.constraints = RigidbodyConstraints.FreezeRotation; // Chỉ di chuyển trong mặt phẳng XY
         sphereRigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous; // Giảm lỗi xuyên qua vật thể
 
         if (joystick == null)
@@ -40,7 +41,6 @@ public class Move : MonoBehaviour
 
         // Tạo vector di chuyển trong mặt phẳng XY
         Vector3 moveDirection = new Vector3(horizontal, vertical, 0f);
-
         // Áp dụng vận tốc để di chuyển hình cầu
         sphereRigidbody.velocity = moveDirection * moveSpeed;
     }
